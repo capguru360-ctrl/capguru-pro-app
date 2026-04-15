@@ -15,10 +15,10 @@ import { HealthResult } from './components/steps/HealthResult';
 import { LeadCapture } from './components/steps/LeadCapture';
 import { Premium } from './components/steps/Premium';
 import { Payment } from './components/steps/Payment';
-import { Button } from './components/ui/button';
+import { Button } from './components/ui/Button';
 import { Wallet, LayoutDashboard, PieChart, ShieldCheck, Users, Star, LogOut, Menu } from 'lucide-react';
 import { cn } from './lib/utils';
-import { AnimatePresence } from 'motion/react';
+import { AnimatePresence } from 'framer-motion';
 
 export default function App() {
   const [currentStep, setCurrentStep] = useState<Step>('landing');
