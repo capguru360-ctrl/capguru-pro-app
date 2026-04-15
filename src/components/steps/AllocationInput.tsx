@@ -1,8 +1,8 @@
 import React from 'react';
-import { Button } from '@/components/ui/button';
-import { Input } from '@/components/ui/input';
-import { Label } from '@/components/ui/label';
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+import { Button } from '@/components/ui/Button';
+import { Input } from '@/components/ui/Input';
+import { Label } from '@/components/ui/Label';
+import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/Card';
 import { UserData } from '@/types';
 import { User, Calendar, IndianRupee, ArrowRight } from 'lucide-react';
 
