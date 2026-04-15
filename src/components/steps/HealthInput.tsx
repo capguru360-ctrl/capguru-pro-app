@@ -2,12 +2,13 @@ import React from 'react';
 import { Button } from '../ui/Button';
 import { Card, CardContent, CardHeader, CardTitle } from '../ui/Card';
 import { Label } from '../ui/Label';
-import { Checkbox } from '../ui/checkbox';
-import { RadioGroup, RadioGroupItem } from '../ui/radio-group';
-import { Input } from '../ui/input';
 import { UserData } from '../../types';
 import { ShieldCheck, ArrowRight, Info, IndianRupee } from 'lucide-react';
-import { cn } from '../../lib/utils';
+
+const Checkbox = (props: any) => <input type="checkbox" {...props} />;
+const RadioGroup = ({ children }: any) => <div>{children}</div>;
+const RadioGroupItem = (props: any) => <input type="radio" {...props} />;
+const Input = (props: any) => <input {...props} />;
 
 interface HealthInputProps {
   onNext: (data: Partial<UserData>) => void;
