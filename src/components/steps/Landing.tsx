@@ -1,8 +1,5 @@
 import React from 'react';
-import { Button } from '@/components/ui/button';
-import { Card, CardContent } from '@/components/ui/card';
-import { Shield, TrendingUp, Zap, ArrowRight } from 'lucide-react';
-
+import Button from '../ui/Button';
 interface LandingProps {
   onStart: () => void;
 }
