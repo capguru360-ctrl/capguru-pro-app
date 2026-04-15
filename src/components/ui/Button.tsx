@@ -1,6 +1,6 @@
 export function Button({ children }) {
   return (
-    <button style={{
+    <Button style={{
       padding: "10px 20px",
       background: "#2563eb",
       color: "white",
@@ -8,6 +8,6 @@ export function Button({ children }) {
       border: "none"
     }}>
       {children}
-    </button>
+    </Button>
   );
 }
