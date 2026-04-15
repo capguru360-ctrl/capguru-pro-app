@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+@import "tailwindcss";
+@import "tw-animate-css";
+@import "shadcn/tailwind.css";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+    --font-sans: 'Inter', sans-serif;
+    --color-background: #F8FAFC;
+    --color-foreground: #0F172A;
+    --color-card: #FFFFFF;
+    --color-card-foreground: #0F172A;
+    --color-primary: #1E3A8A;
+    --color-primary-foreground: #FFFFFF;
+    --color-secondary: #3B82F6;
+    --color-secondary-foreground: #FFFFFF;
+    --color-muted: #F1F5F9;
+    --color-muted-foreground: #64748B;
+    --color-accent: #F97316;
+    --color-accent-foreground: #FFFFFF;
+    --color-border: #E2E8F0;
+    --color-input: #E2E8F0;
+    --color-ring: #3B82F6;
+    --color-sidebar: #0F172A;
+    --color-sidebar-foreground: #94A3B8;
+    --color-sidebar-primary: #3B82F6;
+    --color-sidebar-border: #1E293B;
+    --radius-lg: 16px;
+    --radius-md: 12px;
+    --radius-sm: 8px;
+}
+
+:root {
+    --background: #F8FAFC;
+    --foreground: #0F172A;
+    --card: #FFFFFF;
+    --card-foreground: #0F172A;
+    --popover: #FFFFFF;
+    --popover-foreground: #0F172A;
+    --primary: #1E3A8A;
+    --primary-foreground: #FFFFFF;
+    --secondary: #3B82F6;
+    --secondary-foreground: #FFFFFF;
+    --muted: #F1F5F9;
+    --muted-foreground: #64748B;
+    --accent: #F97316;
+    --accent-foreground: #FFFFFF;
+    --destructive: #EF4444;
+    --destructive-foreground: #FFFFFF;
+    --border: #E2E8F0;
+    --input: #E2E8F0;
+    --ring: #3B82F6;
+    --radius: 1rem;
+}
+
+@layer utilities {
+  .shadow-premium {
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  }
+  .glow-orange {
+    box-shadow: 0 0 15px rgba(249, 115, 22, 0.3);
+  }
+  .btn-gradient-blue {
+    background: linear-gradient(to bottom right, #3B82F6, #1E40AF);
+  }
+  .hover-scale {
+    @apply transition-transform duration-200 hover:scale-[1.03] active:scale-[0.98];
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground antialiased;
+  }
+  html {
+    @apply font-sans;
+  }
+}
