@@ -145,16 +145,7 @@ export function AllocationResult({ data, onNext }: AllocationResultProps) {
           <CardContent className="p-10">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
               <div className="h-[320px] flex items-center justify-center relative">
-                <Pie 
-                  data={pieData} 
-                  options={{ 
-                    maintainAspectRatio: false,
-                    plugins: {
-                      legend: { display: false }
-                    },
-                    cutout: '75%'
-                  }} 
-                />
+               {/* Pie chart removed */}
                 <div className="absolute inset-0 flex flex-col items-center justify-center pointer-events-none">
                   <span className="text-sm font-bold text-muted-foreground uppercase tracking-widest">Total</span>
                   <span className="text-4xl font-black text-foreground">100%</span>
@@ -193,26 +184,7 @@ export function AllocationResult({ data, onNext }: AllocationResultProps) {
           </CardHeader>
           <CardContent className="p-10">
             <div className="h-[350px] w-full">
-              <Bar 
-                data={barData} 
-                options={{ 
-                  maintainAspectRatio: false, 
-                  plugins: { 
-                    legend: { display: false } 
-                  },
-                  scales: {
-                    y: {
-                      beginAtZero: true,
-                      grid: { color: '#F1F5F9' },
-                      ticks: { font: { weight: 'bold' } }
-                    },
-                    x: {
-                      grid: { display: false },
-                      ticks: { font: { weight: 'bold' } }
-                    }
-                  }
-                }} 
-              />
+              {/* Bar chart removed */}
             </div>
           </CardContent>
         </Card>
