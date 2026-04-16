@@ -1,16 +1,8 @@
 import React from 'react';
 
-export default function Card({ children }: any) {
+export function Card({ children }: any) {
   return (
     <div style={{ border: "1px solid #ddd", padding: "16px", borderRadius: "10px" }}>
-      {children}
-    </div>
-  );
-}
-
-export function CardContent({ children }: any) {
-  return (
-    <div style={{ marginTop: "10px" }}>
       {children}
     </div>
   );
@@ -29,5 +21,13 @@ export function CardTitle({ children }: any) {
     <h3 style={{ fontSize: "18px", marginBottom: "5px" }}>
       {children}
     </h3>
+  );
+}
+
+export function CardContent({ children }: any) {
+  return (
+    <div style={{ marginTop: "10px" }}>
+      {children}
+    </div>
   );
 }
