@@ -2,7 +2,7 @@ import React from 'react';
 import { Button } from '@/components/ui/Button';
 import { Input } from '@/components/ui/Input';
 import { Label } from '@/components/ui/Label';
-import Card, { CardContent, CardTitle } from '@/components/ui/Card';
+import Card, { CardContent } from '@/components/ui/Card';
 import { UserData } from '@/types';
 import { User, Calendar, IndianRupee, ArrowRight } from 'lucide-react';
 
