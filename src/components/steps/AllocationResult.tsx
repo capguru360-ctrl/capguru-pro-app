@@ -259,7 +259,9 @@ export function AllocationResult({ data, onNext }: AllocationResultProps) {
       </div>
 
       {/* Hidden Premium Report for PDF Generation */}
-      <PremiumAssetReport data={data} id="premium-asset-report" />
+      {isGenerating && (
+  <PremiumAssetReport data={data} id="premium-asset-report" />
+)}
     </div>
   );
 }
